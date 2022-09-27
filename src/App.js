@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  const [diceNumber, setDiceNumber] = useState(1);
+  const refreshDice = () => {
+    const randnumbr = Math.floor(Math.random() * 6) + 1
+    setDiceNumber(randnumbr)
+
+  }
+
+  return <div>
+    <h1>DICE ROLLER GAME</h1>
+    <img src={require(`./pictures/${diceNumber}.png`)}></img>
+    <br />
+    <button onClick={() => refreshDice()} className="btn">ROLL</button>
+
+
+  </div>
+
 }
-
 export default App;

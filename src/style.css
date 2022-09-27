@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    
+}
+div{
+    text-align: center;
+}
+img{
+  margin-top: 4%;
+  height: 24%;
+  width: 24%;
+}
+.btn{
+    font-size: larger;
+    width: 8rem;
+    height: 4rem;
+    margin-top: 2%;
+    padding: 1em;
+    background-color: rgb(36, 5, 5);
+    color: aqua;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(37, 204, 219);
+    color: rgb(0, 0, 0);
+    border: none;
+
+    border-radius: 10px;
+}
